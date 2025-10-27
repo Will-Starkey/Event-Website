@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  font-family: "Orbitron";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.sticky .logo {
+  padding-left: 30px;
+}
+.sticky a {
+  color: black;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+span {
+  color: #e53935;
+  font-style: bold;
+  font-weight: 1000;
+}
+
+.sticky {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky .navigation {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 0.1em;
+  padding-right: 30px;
+}
+
+.sticky .navigation a {
+  font-size: 15em;
+}
+
+.events {
+  width: 100%;
+  min-height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://media.istockphoto.com/id/1277577337/vector/hall-of-business-conference-with-screen-template.jpg?s=2048x2048&w=is&k=20&c=eaNaoErwgIRJ0VbRA80q_Urlex5sGNJINOM8leege08=);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.events h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 100;
+  font-size: 4.5em;
+}
+.events p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 10px 500px;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentevents h1 {
+  color: black;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.currentevents h1 span {
+  padding-left: 15px;
+}
+
+.currentevents .box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.currentevents .box {
+  width: 350px;
+  border: 15px solid white;
+  box-shadow: 0px 5px 35px lightgray;
+  margin: 20px;
+}
+
+.currentevents .box .imgbox img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.text {
+  text-align: center;
+  padding: 15px 0px 15px;
+}
+
+.currentevents .box {
+  width: 425px;
+  border-radius: 20px;
+}
+
+.text h6 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.cost h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  margin-top: 50px;
+}
+
+.cost span {
+  padding-left: 15px;
+}
+
+.table {
+  margin: 50px auto;
+  border: 7.5px solid black;
+  border-collapse: collapse;
+  font-size: 1em;
+  width: 75%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.table th,
+.table td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  width: 25%;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.table th {
+  background-color: #e53935;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.table tr:hover {
+  background-color: #ffe5e5;
+}
+
+.table td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+.gallery-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 70%;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer h5 a {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer h6 {
+  background-color: black;
+  color: white;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #c62828;
+  transform: translateY(-5px) translateX(-50%);
+}

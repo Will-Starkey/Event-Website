@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  font-family: "Orbitron";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+span {
+  color: #e53935;
+  font-style: bold;
+  font-weight: 1000;
+  font-size: 1.2em;
+}
+
+.sticky .logo {
+  padding-left: 30px;
+}
+.sticky a {
+  color: black;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.sticky a span {
+  color: #e53935;
+  font-style: bold;
+  font-weight: 1000;
+}
+
+.sticky {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky .navigation {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 0.1em;
+  padding-right: 30px;
+}
+
+.sticky .navigation a {
+  font-size: 15em;
+}
+
+.about {
+  width: 100%;
+  min-height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://media.istockphoto.com/id/981489280/photo/discussing-table-setting.jpg?s=2048x2048&w=is&k=20&c=lO0KzZUh2Gvl0EIrgAecQ716iDK5FaIz-OSyN1ZUmds=);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .title h1 {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-size: 2.75em;
+}
+
+.title span {
+  color: #e53935;
+  font-style: bold;
+  font-weight: 1000;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.about p {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin-right: 400px;
+  margin-left: 400px;
+  text-align: center;
+  font-size: 1.2em;
+  border-radius: 10px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.founder .title h1 {
+  color: black;
+  font-weight: 100;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.founder .founder-background p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin-left: 30px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.founder-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.founder .box {
+  width: 100%;
+  border: 15px solid white;
+  box-shadow: 0px 5px 35px lightgray;
+  margin: 20px 100px 20px 20px;
+  border-radius: 20px;
+}
+
+.founder .box .imgbox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.founding-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px 100px;
+}
+
+.founding-img img {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 35px lightgray;
+}
+
+.founding-article {
+  flex: 1;
+}
+.founding .founding-title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.founding .founding-title span {
+  margin-left: 10px;
+}
+
+.founding .founding-article p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 0px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.press h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.press span {
+  margin-left: 10px;
+}
+
+.press-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+}
+
+.press-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 400px;
+  max-width: 600px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.press-box .publication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.press-box .press-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.35em;
+}
+
+.press-box .press-article {
+  line-height: 1.6;
+  font-size: 1.025em;
+}
+
+.press {
+  margin-bottom: 100px;
+}
+.footer h5 a {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer h6 {
+  background-color: black;
+  color: white;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #c62828;
+  transform: translateY(-5px) translateX(-50%);
+}
