@@ -57,6 +57,14 @@ header {
   font-size: 15em;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 6em;
+  cursor: pointer;
+  color: black;
+  padding-right: 30px;
+}
+
 .banner {
   width: 100%;
   min-height: 100vh;
@@ -260,4 +268,211 @@ header {
 #backToTop:hover {
   background-color: #c62828;
   transform: translateY(-5px) translateX(-50%);
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    font-size: 0.25em;
+  }
+  .sticky .logo {
+    font-size: 6em;
+    margin: 0px 0px 0px -14px;
+  }
+  .banner .main h4 {
+    margin: 0px 8.5px 0px 8.5px;
+    font-size: 3.5em;
+  }
+  .banner .main h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  .intro-mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .intro-mission .mission h2 {
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .intro-mission .img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .intro-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .intro-start .mission h2 {
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .intro-start .mission p {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 7.5px 0px 7.5px;
+  }
+
+  .intro-start .img {
+    width: 100%;
+    margin: 0;
+  }
+  .experts .content .box .imgbox img {
+    height: 170px;
+  }
+  .experts .content .box h3 {
+    font-size: 3.5em;
+  }
+  .experts .content .box h6 {
+    font-size: 2em;
+  }
+
+  #backToTop {
+    padding: 10px 14px;
+    font-size: 16px;
+    bottom: 70px;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    font-size: 0.25em;
+  }
+  .sticky .logo {
+    font-size: 6em;
+    margin: 0px 0px 0px -14px;
+  }
+
+  .sticky .navigation a {
+    font-size: 35em;
+  }
+  .banner .main h4 {
+    margin: 0px 11.5px 0px 11.5px;
+    font-size: 3.5em;
+  }
+  .banner .main h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+  }
+  .intro-mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .intro-mission .mission h2 {
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .intro-mission .mission p {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .intro-mission .img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .intro-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .intro-start .mission h2 {
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .intro-start .mission p {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 7.5px 0px 7.5px;
+  }
+
+  .intro-start .img {
+    width: 100%;
+    margin: 0;
+  }
+  .experts .title h1 {
+    font-size: 10em;
+  }
+  .experts .content .box .imgbox img {
+    height: 350px;
+  }
+  .experts .content .box h3 {
+    font-size: 6.5em;
+  }
+  .experts .content .box h6 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .navigation {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .navigation.show {
+    right: 0;
+  }
+  .menu-toggle {
+    display: block;
+    justify-content: center;
+    font-size: 6em;
+  }
+  .navigation li {
+    list-style: none;
+    margin: 0.1px 0;
+    text-align: center;
+  }
+  .navigation li a {
+    font-size: 1.2em;
+    color: black;
+  }
 }

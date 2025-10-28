@@ -11,10 +11,12 @@
     <!--Logo-->
     <header class="sticky">
       <a href="index.html" class="logo">EVENTS<span>HUB</span></a>
-      </div>
+      
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
 
       <!--Navbar-->
-      <ul class="navigation">
+      <ul class="navigation" id="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="about.html">About</a></li>
@@ -80,6 +82,7 @@
     <div class="cost">
       <h1><span>E</span>vent <span>P</span>lanning <span>C</span>osts</h1>
     </div>
+    <div class="table-container">
     <table class="table">
   <tr>
     <th>Event Type</th>
@@ -114,6 +117,7 @@
     <td>$15,000</td>
   </tr>
 </table>
+  </div>
 
 <!--Event Gallery-->
 <h1 class="gallery-title"><span>G</span>allery</h1>
@@ -198,6 +202,16 @@
             behavior: "smooth"
           });
         }
+    </script>
+
+    <!--Hamburger Script-->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
     </script>
 </body>
 </html>

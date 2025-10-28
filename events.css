@@ -57,6 +57,14 @@ header {
   font-size: 15em;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 6em;
+  cursor: pointer;
+  color: black;
+  padding-right: 30px;
+}
+
 .events {
   width: 100%;
   min-height: 75vh;
@@ -167,6 +175,11 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .table th,
 .table td {
   border: 1px solid black;
@@ -266,4 +279,130 @@ header {
 #backToTop:hover {
   background-color: #c62828;
   transform: translateY(-5px) translateX(-50%);
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    font-size: 0.25em;
+  }
+  .sticky .logo {
+    font-size: 6em;
+    margin: 0px 0px 0px -14px;
+  }
+  .events p {
+    margin: 0px 7.5px 0px 7.5px;
+    font-size: 3.5em;
+  }
+  .events h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  .events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0;
+  }
+  .box .imgbox img {
+    width: 100%;
+    height: auto;
+  }
+  .text h3 {
+    font-size: 1.5em;
+  }
+  .text h6 {
+    font-size: 1em;
+  }
+
+  #backToTop {
+    padding: 10px 14px;
+    font-size: 16px;
+    bottom: 70px;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    font-size: 0.25em;
+  }
+  .sticky .logo {
+    font-size: 6em;
+    margin: 0px 0px 0px -14px;
+  }
+
+  .sticky .navigation a {
+    font-size: 35em;
+  }
+  .events p {
+    margin: 0px 7.5px 0px 7.5px;
+    font-size: 3.5em;
+  }
+  .events h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  .events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0;
+  }
+  .box .imgbox img {
+    width: 100%;
+    height: auto;
+  }
+  .text h3 {
+    font-size: 1.5em;
+  }
+  .text h6 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .navigation {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .navigation.show {
+    right: 0;
+  }
+  .menu-toggle {
+    display: block;
+    justify-content: center;
+    font-size: 6em;
+  }
+  .navigation li {
+    list-style: none;
+    margin: 0.1px 0;
+    text-align: center;
+  }
+  .navigation li a {
+    font-size: 1.2em;
+    color: black;
+  }
 }

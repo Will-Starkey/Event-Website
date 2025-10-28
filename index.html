@@ -11,10 +11,12 @@
     <!--Logo-->
     <header class="sticky">
       <a href="index.html" class="logo">EVENTS<span>HUB</span></a>
-      </div>
+
+      <!--Hamburger Menu-->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
 
       <!--Navbar-->
-      <ul class="navigation">
+      <ul class="navigation" id="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="about.html">About</a></li>
@@ -133,6 +135,15 @@
         }
     </script>
 
+    <!--Hamburger Script-->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+    </script>
 
   </body>
 </html>
