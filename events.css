@@ -357,20 +357,33 @@ header {
     flex-direction: column;
     gap: 20px;
   }
-
+  .currentevents .box {
+    width: 600px;
+  }
+  .currentevents .box .imgbox {
+    width: 500px;
+    height: 325px;
+  }
+  .currentevents .events-container .box .text h3 {
+    font-size: 6em;
+  }
+  .currentevents .events-container .box .text h6 {
+    font-size: 5em;
+  }
   .box {
     width: 100%;
     margin: 0;
-  }
-  .box .imgbox img {
-    width: 100%;
-    height: auto;
   }
   .text h3 {
     font-size: 1.5em;
   }
   .text h6 {
     font-size: 1em;
+  }
+  .table-container .table {
+    height: 400px;
+    width: 80%;
+    font-size: 3.25em;
   }
 }
 
