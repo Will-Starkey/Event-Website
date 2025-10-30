@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" class="stylesheet" />
+    <title>EVENTSHUB</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="sticky">
+      <a href="index.html" class="logo">EVENTS<span>HUB</span></a>
+
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <!--Navbar-->
+      <ul class="navigation" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <!--Banner-->
+    <main class="banner">
+      <div class="contactus">
+        <h1><span>C</span>ontact Us</h1>
+      </div>
+    </main>
+
+    <!--Contact Form-->
+    <section class="contact">
+      <div class="contact-header">
+        <h2><span>E</span>vent <span>I</span>nquiry</h2>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact Informtation</h3>
+        <form class="contact-form" action="/submit-inquiry" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="eventType">Event Type:</label>
+            <select id="eventType" name="eventType">
+              <option value="conference">Conference</option>
+              <option value="tradeshow">Trade Show</option>
+              <option value="wedding">Wedding</option>
+              <option value="gala">Gala</option>
+              <option value="exhibit">Exhibit</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" />
+          </div>
+          <div class="form-group">
+            <label for="guests">Estimated Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="100" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message / Details:</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit Inquiry</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--EVENTSHUB Contact Info-->
+    <section class="contactInfo">
+      <div class="info">
+        <div class="phone"><p>Phone: +1 123-123-1234</p></div>
+        <div class="email"><p>Email: events@EVENTSHUB.com</p></div>
+      </div>
+
+      <div class="mailing-address">
+        <div class="address">
+          <p>Address: 123 5th Ave, New York, NY 12312</p>
+        </div>
+      </div>
+    </section>
+    <sction class="image">
+      <img
+        class="imgbox"
+        src="https://media.istockphoto.com/id/467845758/vector/map-of-lower-manhattan.jpg?s=2048x2048&w=is&k=20&c=TYv2HykCE1_4w4cfPFQr8juuRxFQDW-Oj9w00My42z0="
+        alt="Map"
+      />
+    </sction>
+
+    <!--Footer-->
+    <footer class="footer">
+      <h5>
+        <a href="https://www.instagram.com/codingtemple/?hl=en"
+          >Follow us on Instagram!</a
+        >
+      </h5>
+      <h6>&copy Will Starkey Design</h6>
+    </footer>
+
+    <!--Back To Top Button-->
+    <div class="topbutton">
+      <button onclick="scrollToTop()" id="backToTop" title="Go to top">
+        Back to Top
+      </button>
+    </div>
+
+    <!--Back To Top Script-->
+    <script>
+      window.onscroll = function () {
+        const btn = document.getElementById("backToTop");
+        if (
+          document.body.scrollTop > 700 ||
+          document.documentElement.scrollTop > 700
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+
+    <!--Hamburger Script-->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
