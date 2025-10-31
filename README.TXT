@@ -1,0 +1,3 @@
+This is my completed Event Website. There are four pages contained inside their corasponding HTML files with CSS styling of the same name. 
+I have set it up so that there is combatablity for desktop, mobile, and tablet viewing. 
+With all of the files in the same folder open the index.html file, this allows all of the styling and other linked pages to be viewed correctly and accesed by the web browser.

@@ -108,7 +108,9 @@ header {
 
 .contact-info {
   box-shadow: 11px 6px 11px 9px lightgray;
-  margin: 0px 800px 150px 800px;
+  margin: 0px auto 150px auto;
+  margin-right: 200px;
+  margin-left: 200px;
   border-radius: 20px;
 }
 
